@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Luxury Stay Hotel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h1>Welcome to Luxury Stay</h1>
+        <p>Experience comfort, elegance, and world-class hospitality.</p>
+        <a href="#features" class="btn">Explore Features</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    <div class="features-header">
+      <h2>Our Hotel Features</h2>
+    </div>
+    <div class="features-container">
+      <div class="feature-box">
+        <h3>🛏️ Luxury Rooms</h3>
+        <p>Spacious and beautifully designed rooms for your comfort.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🍽️ Fine Dining</h3>
+        <p>Enjoy gourmet meals in our elegant restaurant.</p>
+      </div>
+      <div class="feature-box">
+        <h3>🏊 Swimming Pool</h3>
+        <p>Relax and unwind in our rooftop infinity pool.</p>
+      </div>
+      <div class="feature-box">
+        <h3>💆 Spa & Wellness</h3>
+        <p>Pamper yourself with rejuvenating spa treatments.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Luxury Stay Hotel. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  color: #ffffff;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  color: #dddddd;
+  font-size: 20px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+/* Button Style */
+.btn {
+  background: #00f5d4;
+  color: #0a1931;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #ff206e;
+  color: #ffffff;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.features-header h2 {
+  font-size: 36px;
+  color: #0a1931;
+  margin-bottom: 40px;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.feature-box {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 20px;
+  width: 250px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.feature-box p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Footer */
+footer {
+  background: #1a1a2e;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .features-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 90%;
+  }
+}
